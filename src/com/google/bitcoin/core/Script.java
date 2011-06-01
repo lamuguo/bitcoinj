@@ -16,8 +16,13 @@
 
 package com.google.bitcoin.core;
 
+import static com.google.bitcoin.core.Utils.bytesToHexString;
+
 import com.google.bitcoin.core.Transaction.SigHash;
-import com.google.bitcoin.bouncycastle.util.Arrays;
+
+import org.bouncycastle.util.Arrays;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -25,11 +30,6 @@ import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import static com.google.bitcoin.core.Utils.bytesToHexString;
 
 /**
  * BitCoin transactions don't specify what they do directly. Instead <a href="https://en.bitcoin.it/wiki/Script">a

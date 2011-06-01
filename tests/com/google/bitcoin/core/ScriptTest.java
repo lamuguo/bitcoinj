@@ -16,12 +16,11 @@
 
 package com.google.bitcoin.core;
 
-import com.google.bitcoin.bouncycastle.util.encoders.Hex;
-
-import org.junit.Test;
-
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
+
+import org.bouncycastle.util.encoders.Hex;
+import org.junit.Test;
 
 public class ScriptTest {
     // From tx 05e04c26c12fe408a3c1b71aa7996403f6acad1045252b1c62e055496f4d2cb1 on the testnet.

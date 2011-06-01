@@ -16,7 +16,11 @@
 
 package com.google.bitcoin.core;
 
-import com.google.bitcoin.bouncycastle.util.encoders.Hex;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
+
+import org.bouncycastle.util.encoders.Hex;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -27,8 +31,6 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.math.BigInteger;
 import java.util.Arrays;
-
-import static org.junit.Assert.*;
 
 public class BlockTest {
     private static Logger log = LoggerFactory.getLogger(BlockTest.class);

@@ -16,13 +16,16 @@
 
 package com.google.bitcoin.core;
 
-import com.google.bitcoin.bouncycastle.util.encoders.Hex;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
+
+import org.bouncycastle.util.encoders.Hex;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.math.BigInteger;
-
-import static org.junit.Assert.*;
 
 // NOTE: Handling of chain splits/reorgs are in ChainSplitTests.
 

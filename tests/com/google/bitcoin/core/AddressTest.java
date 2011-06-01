@@ -16,10 +16,10 @@
 
 package com.google.bitcoin.core;
 
-import com.google.bitcoin.bouncycastle.util.encoders.Hex;
-import org.junit.Test;
-
 import static org.junit.Assert.assertEquals;
+
+import org.bouncycastle.util.encoders.Hex;
+import org.junit.Test;
 
 public class AddressTest {
     static final NetworkParameters testParams = NetworkParameters.testNet();

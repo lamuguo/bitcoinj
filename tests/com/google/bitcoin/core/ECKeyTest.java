@@ -16,13 +16,13 @@
 
 package com.google.bitcoin.core;
 
-import com.google.bitcoin.bouncycastle.util.encoders.Hex;
+import static com.google.bitcoin.core.Utils.reverseBytes;
+import static org.junit.Assert.assertTrue;
+
+import org.bouncycastle.util.encoders.Hex;
 import org.junit.Test;
 
 import java.math.BigInteger;
-
-import static com.google.bitcoin.core.Utils.*;
-import static org.junit.Assert.assertTrue;
 
 public class ECKeyTest {
     @Test
